@@ -1,13 +1,22 @@
+/*Bulma Overrides*/
 .navbar {
   background: #283442;
 }
 
-.item{
+.item {
   color: white;
+}
+
+a.logo:hover {
+  background: none;
 }
 
 .navbar-link::after {
   border-color: white;
+}
+
+.navbar-link:hover::after{
+  border-color: #283442;
 }
 
 /*Card Styles */

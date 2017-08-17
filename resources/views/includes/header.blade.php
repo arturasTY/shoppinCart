@@ -1,7 +1,7 @@
 <nav class="navbar ">
   <div class="navbar-brand">
-    <a class="navbar-item" href="http://bulma.io">
-      <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+    <a class="navbar-item logo" href="/">
+      <img src="{{ URL::to('src/images/logo.png') }}" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
     </a>
     <div class="navbar-burger burger" data-target="navMenubd-example">
       <span></span>
@@ -13,22 +13,22 @@
 
     <div class="navbar-end">
       <a href="#" class="navbar-item item">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Shopping cart
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;Shopping cart
       </a>
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link item" href="/documentation/overview/start/">
-          <i class="fa fa-user" aria-hidden="true"></i>&nbsp;User Account
+        <a class="navbar-link item" href="#">
+          <i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;User Account
         </a>
         <div class="navbar-dropdown ">
-          <a class="navbar-item " href="/documentation/overview/start/">
-            Overview
+          <a class="navbar-item " href="#">
+            Sign Up
           </a>
-          <a class="navbar-item " href="http://bulma.io/documentation/modifiers/syntax/">
-            Modifiers
+          <a class="navbar-item " href="#">
+            Sign In
           </a>
           <hr class="navbar-divider">
-          <a class="navbar-item " href="http://bulma.io/documentation/columns/basics/">
-            Columns
+          <a class="navbar-item " href="#">
+            Log Out
           </a>
         </div>
       </div>
