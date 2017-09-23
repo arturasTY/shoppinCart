@@ -10,7 +10,6 @@
       <div class="hero-body">
         <div class="column is-1-12 cart">
             <h1 class="has-text-centered is-size-3 bottom-pad">Your Basket</h1>
-            @if(Session::has('cart'))
               <table class="table table-responsive">
                 <thead>
                     <tr>
@@ -40,31 +39,19 @@
                   @endforeach
                 </tbody>
               </table>
+              <div class="checkout-btn mar-top">
+                <a href="{{ route('checkout') }}" class="button is-success">Checkout</a>
+              </div>
             @else
-              <h1 class="has-text-centered is-size-3 bottom-pad">No Item in the Basket !</h1>
+              <div class="columns">
+                <div class="hero-body">
+                  <div class="column is-1-12">
+                    <h2 class="has-text-centered is-size-3 bottom-pad">No Items in the Basket !</h2>
+                  </div>
+                </div>
+              </div>
             @endif
-            <a href="{{ route('checkout') }}" class="button is-success">Checkout</a>
         </div>
       </div>
     </div>
-  @else
-
-  @endif
 @endsection
-
-
-
-                    {{-- <ul class="list-group">
-                      @foreach ($products as $product)
-                        <li class="list-group-item">
-                          <span>{{ $product['qty'] }}X</span>
-                          <strong>{{ $product['item']['title'] }}</strong>
-                          <span class="tag is-success">{{ $product['price'] }}</span>
-                          <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link item" href="#">
-                              Action
-                            </a>
-                          </div>
-                        </li>
-                      @endforeach
-                    </ul> --}}

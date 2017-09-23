@@ -21,6 +21,14 @@ body, html {
   color: #00d1b2;
 }
 
+.cntr {
+  text-align: center;
+}
+
+.checkout-btn {
+  text-align: center;
+}
+
 .checkout-form {
   max-width: 400px;
   margin: 40px auto;
@@ -36,8 +44,20 @@ body, html {
 
 .signup {
   height: 600px;
-  display: flex;
-  align-items: center;
+  margin-top: 50px;
+  background: white;
+}
+
+.column.is-half {
+  float: left;
+}
+
+.column.details {
+  width: 30%;
+  float: right;
+}
+.mar-top {
+  margin-top: 50px;
 }
 
 .bottom-pad {

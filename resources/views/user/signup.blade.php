@@ -12,9 +12,6 @@
             <span class="icon is-small is-left">
               <i class="fa fa-envelope"></i>
             </span>
-            <span class="icon is-small is-right">
-              <i class="fa fa-check"></i>
-            </span>
           </p>
         </div>
         <div class="field">
@@ -26,7 +23,7 @@
           </p>
         </div>
         <div class="field">
-          <p class="control">
+          <p class="control cntr">
             <button class="button is-primary">
               Sign Up
             </button>

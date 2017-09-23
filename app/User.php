@@ -26,4 +26,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function orders()
+    {
+        //relationship: one user can have many orders
+        return $this->hasMany('App\Order');
+    }
 }

@@ -13,8 +13,8 @@
   <div id="navMenubd-example" class="navbar-menu">
     <div class="navbar-end">
       <a href="{{ route('product.shoppingCart') }}" class="navbar-item item">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;Shopping cart
-        <span class="tag">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;&nbsp;Shopping cart&nbsp;&nbsp;
+        <span class="tag {{ Session::has('cart') ? 'is-danger' : '' }}">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
       </a>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link item" href="#">
